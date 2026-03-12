@@ -131,32 +131,6 @@ This project was improved from a simple local Docker Compose setup into a more p
 - environment-based configuration with `.env`
 - persistent database storage with a named volume
 
-## Suggested GitHub Repo Name
-
-- `docker-compose-etl-demo`
-- `python-postgres-etl-pipeline`
-- `compose-data-pipeline-demo`
-
-## Notes Before Pushing to GitHub
-
-- Keep `.env` out of GitHub
-- Push `.env.example` instead
-- Make sure your README explains how to build and run the project
-- If you want others to run the project directly after cloning, consider changing the app service from:
-
-```yaml
-image: etl-app:v2
-#build: .
-```
-
-to:
-
-```yaml
-build: .
-image: etl-app:v2
-```
-
-That way, Docker Compose can build the image automatically.
 
 ## Future Enhancements
 
